@@ -12,12 +12,13 @@
 6. User receives confirmation
 
 ## Decision Flow
-Start
- ↓
-Play Payment Info
- ↓
-Wait for Input
- ↓
-[1] Confirm → Success
-[2] Cancel → Abort
-[No Input] → Timeout
+
+Start  
+↓  
+Play Payment Information  
+↓  
+Wait for User Input  
+↓  
+├── Press 1 → Confirm Payment → Success  
+├── Press 2 → Cancel Payment → Transaction Aborted  
+└── No Input → Timeout → Retry / Exit  
